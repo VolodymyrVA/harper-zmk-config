@@ -41,7 +41,7 @@
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR        &kp PERCENT           &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
 &kp TAB    &kp N1           &kp N2       &kp N3        &kp N4            &kp N5                &kp N6           &kp N7         &kp N8        &kp N9                &kp N0                 &kp PIPE
 &kp LSHFT  &kp EQUAL        &kp MINUS    &kp KP_PLUS   &kp LBRC          &kp RBRC              &kp C_MUTE       &none          &kp LBKT      &kp RBKT              &kp SEMI               &kp COLON
-&kp BSLH   &kp RSHFT        &kp LCTRL    &kp LEFT_ALT  &kp LEFT_COMMAND  &mo ADJ      &mo RSE  &mo LWR          &kp SPACE      &kp DELETE    &kp RIGHT_COMMAND     &kp RIGHT_ALT          &kp RIGHT_CONTROL  &kp RIGHT_SHIFT
+&kp BSLH   &kp RSHFT        &kp LCTRL    &kp LEFT_ALT  &kp LEFT_COMMAND  &mo ADJ      &mo RSE  &mo LWR          &kp SPACE      &kp ENTER     &kp RIGHT_COMMAND     &kp RIGHT_ALT          &kp RIGHT_CONTROL  &kp RIGHT_SHIFT
                                                                                                &kp RIGHT_SHIFT                                                                                               &kp RIGHT_SHIFT
             >;
 
@@ -52,9 +52,9 @@
             bindings = <
 &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4           &trans           &trans     &trans        &trans             &trans         &trans
 &trans          &kp INS         &kp PSCRN         &kp K_CMENU   &trans            &trans                 &kp PG_UP        &trans     &kp UP        &trans             &kp N0         &trans
-&trans          &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LS(CLCK)           &kp LEFT_ARROW   &kp DOWN   &kp UP_ARROW  &kp RIGHT          &kp DEL        &kp BSPC
+&trans          &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp CAPSLOCK           &kp LEFT_ARROW   &kp DOWN   &kp UP_ARROW  &kp RIGHT          &kp DEL        &kp BSPC
 &kp LEFT_SHIFT  &kp K_UNDO      &kp K_CUT         &kp K_COPY    &kp K_PASTE       &trans                 &kp C_MUTE       &trans     &trans        &trans             &trans         &trans
-&trans          &trans          &kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &mo ADJ       &mo RSE  &mo LWR          &kp SPACE  &kp DELETE    &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT
+&trans          &trans          &kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &mo ADJ       &mo RSE  &mo LWR          &kp SPACE  &kp ENTER     &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT
                                                                                                          &kp RIGHT_SHIFT                                                                                &kp RIGHT_SHIFT
             >;
 
@@ -67,7 +67,7 @@
 &rgb_ug RGB_TOG                  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF           &kp PG_UP        &trans     &kp UP        &trans             &kp N0         &trans
 &ext_power EXT_POWER_TOGGLE_CMD  &kp LALT         &kp LCTRL        &kp LSHFT        &trans           &kp CLCK                  &kp LEFT_ARROW   &kp DOWN   &kp UP_ARROW  &kp RIGHT          &kp DEL        &kp BSPC
 &kp LEFT_SHIFT                   &kp K_UNDO       &kp K_CUT        &kp K_COPY       &kp K_PASTE      &trans                    &kp C_MUTE       &trans     &trans        &trans             &trans         &trans
-&trans                           &trans           &kp LCTRL        &kp LGUI         &kp LALT         &mo ADJ          &mo RSE  &mo LWR          &kp SPACE  &kp DELETE    &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT
+&trans                           &trans           &kp LCTRL        &kp LGUI         &kp LALT         &mo ADJ          &mo RSE  &mo LWR          &kp SPACE  &kp ENTER     &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT
                                                                                                                                &kp RIGHT_SHIFT                                                                                &kp RIGHT_SHIFT
             >;
 
