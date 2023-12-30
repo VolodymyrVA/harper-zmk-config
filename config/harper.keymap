@@ -24,12 +24,6 @@
     };
 
     macros {
-        new_macro: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "NEW_MACRO";
-        };
     };
 
     keymap {
@@ -41,7 +35,7 @@
 &kp TAB       &kp Q            &kp W   &kp E           &kp R             &kp T                            &lt 2 Y          &mt LEFT_BRACKET U  &mt RIGHT_BRACKET I  &kp O        &kp P                                &kp BACKSPACE
 &kp CAPSLOCK  &kp A            &kp S   &kp D           &lt 2 F           &kp G                            &kp H            &kp J               &kp K                &kp L        &mt LA(LS(LC(LG(SPACE)))) SEMICOLON  &kp APOSTROPHE
 &kp LSHFT     &kp Z            &kp X   &mt LG(C) C     &mt LG(V) V       &kp B                            &kp C_MUTE       &mo 3               &kp N                &mt MINUS M  &mt EQUAL COMMA                      &kp DOT
-&kp FSLH      &kp RIGHT_SHIFT  &mo 3   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RIGHT_ALT  &kp LEFT_COMMAND  &mo 1            &kp SPACE           &kp ENTER            &mo 2        &kp RIGHT_COMMAND                    &kp RIGHT_ALT   &kp RIGHT_CONTROL
+&kp FSLH      &kp RIGHT_SHIFT  &mo 3   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RIGHT_ALT  &kp LEFT_COMMAND  &tog 1           &kp SPACE           &kp ENTER            &tog 2       &kp RIGHT_COMMAND                    &kp RIGHT_ALT   &kp RIGHT_CONTROL
                                                                                                           &kp RIGHT_SHIFT                                                                                                             &mo 3
             >;
 
