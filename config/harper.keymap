@@ -32,6 +32,8 @@
             label = "TO_LAYER_TAP_DANCE";
             #binding-cells = <0>;
             bindings = <&to 1>, <&to 0>;
+
+            tapping-term-ms = <300>;
         };
 
         l2_reset_0: l2_reset_0 {
@@ -39,6 +41,8 @@
             label = "L2_RESET_0";
             #binding-cells = <0>;
             bindings = <&to 2>, <&to 0>;
+
+            tapping-term-ms = <300>;
         };
     };
 
@@ -51,7 +55,7 @@
 &kp TAB       &kp Q            &kp W   &kp E           &kp R             &kp T                            &kp Y            &mt LEFT_BRACKET U  &mt RIGHT_BRACKET I  &kp O        &kp P                                &kp BACKSPACE
 &kp CAPSLOCK  &kp A            &kp S   &kp D           &lt 2 F           &kp G                            &kp H            &kp J               &kp K                &kp L        &mt LA(LS(LC(LG(SPACE)))) SEMICOLON  &kp APOSTROPHE
 &kp LSHFT     &kp Z            &kp X   &mt LG(C) C     &mt LG(V) V       &kp B                            &kp C_MUTE       &mo 3               &kp N                &mt MINUS M  &mt EQUAL COMMA                      &kp DOT
-&kp FSLH      &kp RIGHT_SHIFT  &mo 3   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RIGHT_ALT  &kp LEFT_COMMAND  &l1_reset_0      &kp SPACE           &kp ENTER            &l2_reset_0  &kp RIGHT_COMMAND                    &kp RIGHT_ALT   &kp RIGHT_CONTROL
+&kp FSLH      &kp RIGHT_SHIFT  &mo 3   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RIGHT_ALT  &kp LEFT_COMMAND  &to 1            &lt 0 SPACE         &kp ENTER            &to 2        &kp RIGHT_COMMAND                    &kp RIGHT_ALT   &kp RIGHT_CONTROL
                                                                                                           &kp RIGHT_SHIFT                                                                                                             &mo 3
             >;
 
