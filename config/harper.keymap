@@ -44,6 +44,15 @@
 
             tapping-term-ms = <300>;
         };
+
+        hold_to_layer: hold_to_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TO_LAYER";
+            bindings = <&to>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+        };
     };
 
     keymap {
@@ -51,12 +60,12 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE    &kp N1           &kp N2  &kp N3          &kp N4            &kp N5                           &kp N6           &kp N7              &kp N8               &kp N9       &kp N0                               &trans
-&kp TAB       &kp Q            &kp W   &kp E           &kp R             &kp T                            &kp Y            &mt LEFT_BRACKET U  &mt RIGHT_BRACKET I  &kp O        &kp P                                &kp BACKSPACE
-&kp CAPSLOCK  &kp A            &kp S   &kp D           &lt 2 F           &kp G                            &kp H            &kp J               &kp K                &kp L        &mt LA(LS(LC(LG(SPACE)))) SEMICOLON  &kp APOSTROPHE
-&kp LSHFT     &kp Z            &kp X   &mt LG(C) C     &mt LG(V) V       &kp B                            &kp C_MUTE       &mo 3               &kp N                &mt MINUS M  &mt EQUAL COMMA                      &kp DOT
-&kp FSLH      &kp RIGHT_SHIFT  &mo 3   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RIGHT_ALT  &kp LEFT_COMMAND  &l1_reset_0      &kp SPACE           &kp ENTER            &l2_reset_0  &kp RIGHT_COMMAND                    &kp RIGHT_ALT   &kp RIGHT_CONTROL
-                                                                                                          &kp RIGHT_SHIFT                                                                                                             &mo 3
+&kp ESCAPE    &kp N1           &kp N2  &kp N3              &kp N4            &kp N5                           &kp N6           &kp N7              &kp N8               &kp N9       &kp N0                               &trans
+&kp TAB       &kp Q            &kp W   &kp E               &kp R             &kp T                            &kp Y            &mt LEFT_BRACKET U  &mt RIGHT_BRACKET I  &kp O        &kp P                                &kp BACKSPACE
+&kp CAPSLOCK  &kp A            &kp S   &hold_to_layer 1 D  &kp F             &kp G                            &kp H            &hold_to_layer 2 J  &kp K                &kp L        &mt LA(LS(LC(LG(SPACE)))) SEMICOLON  &kp APOSTROPHE
+&kp LSHFT     &kp Z            &kp X   &mt LG(C) C         &mt LG(V) V       &kp B                            &kp C_MUTE       &mo 3               &kp N                &mt MINUS M  &mt EQUAL COMMA                      &kp DOT
+&kp FSLH      &kp RIGHT_SHIFT  &mo 3   &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp RIGHT_ALT  &kp LEFT_COMMAND  &l1_reset_0      &kp SPACE           &kp ENTER            &l2_reset_0  &kp RIGHT_COMMAND                    &kp RIGHT_ALT   &kp RIGHT_CONTROL
+                                                                                                              &kp RIGHT_SHIFT                                                                                                             &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -64,12 +73,12 @@
 
         lower_layer {
             bindings = <
-&kp ESCAPE     &kp F1           &kp F2       &kp F3          &kp F4            &kp F5                                &kp F6           &kp F7         &kp F8            &kp F9                &kp F10                &kp GRAVE
-&kp TAB        &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR        &kp PERCENT                           &kp CARET        &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-&kp CAPSLOCK   &kp N1           &kp N2       &kp N3          &kp N4            &kp N5                                &kp N6           &kp N7         &kp N8            &kp N9                &kp N0                 &kp GRAVE
-&kp LSHFT      &kp F11          &kp F12      &trans          &trans            &mt LEFT_COMMAND C                    &kp C_MUTE       &none          &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp LEFT_BRACE         &kp RIGHT_BRACE
-&kp BACKSLASH  &kp RIGHT_SHIFT  &mo 3        &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT        &kp LEFT_COMMAND  &l1_reset_0      &kp SPACE      &kp ENTER         &l2_reset_0           &kp RIGHT_COMMAND      &kp RIGHT_ALT    &kp RIGHT_CONTROL
-                                                                                                                     &kp RIGHT_SHIFT                                                                                                 &mo 3
+&kp ESCAPE     &kp F1           &kp F2       &kp F3          &kp F4                     &kp F5                                &kp F6           &kp F7               &kp F8            &kp F9                &kp F10                &kp GRAVE
+&kp TAB        &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR                 &kp PERCENT                           &kp CARET        &kp AMPERSAND        &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+&kp CAPSLOCK   &kp N1           &kp N2       &kp N3          &hold_to_layer 0 NUMBER_4  &kp N5                                &kp N6           &hold_to_layer 2 N7  &kp N8            &kp N9                &kp N0                 &kp GRAVE
+&kp LSHFT      &kp F11          &kp F12      &trans          &trans                     &mt LEFT_COMMAND C                    &kp C_MUTE       &none                &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp LEFT_BRACE         &kp RIGHT_BRACE
+&kp BACKSLASH  &kp RIGHT_SHIFT  &mo 3        &kp LEFT_SHIFT  &kp LEFT_CONTROL           &kp LEFT_ALT        &kp LEFT_COMMAND  &l1_reset_0      &kp SPACE            &kp ENTER         &l2_reset_0           &kp RIGHT_COMMAND      &kp RIGHT_ALT    &kp RIGHT_CONTROL
+                                                                                                                              &kp RIGHT_SHIFT                                                                                                       &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -77,12 +86,12 @@
 
         raise_layer {
             bindings = <
-&kp ESCAPE      &kp N1           &kp N2   &kp N3          &kp N4            &kp N5                          &kp N6           &kp N7            &kp N8             &kp N9           &kp N0             &kp BACKSPACE
-&kp TAB         &kp F1           &kp F2   &kp F3          &kp F4            &kp F5                          &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans             &kp BACKSPACE
-&kp CAPSLOCK    &kp F6           &kp F7   &kp F8          &kp F9            &kp F10                         &kp LEFT_ARROW   &kp DOWN_ARROW    &kp UP_ARROW       &kp RIGHT_ARROW  &kp ENTER          &kp GRAVE
-&kp LEFT_SHIFT  &kp F11          &kp F12  &trans          &trans            &trans                          &kp C_MUTE       &mo 3             &trans             &kp MINUS        &kp EQUAL          &trans
-&kp BACKSLASH   &kp RIGHT_SHIFT  &mo 3    &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &l1_reset_0      &kp SPACE         &kp ENTER          &l2_reset_0      &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL
-                                                                                                            &kp RIGHT_SHIFT                                                                                          &mo 3
+&kp ESCAPE      &kp N1           &kp N2   &kp N3               &kp N4               &kp N5                          &kp N6           &kp N7            &kp N8             &kp N9           &kp N0             &kp BACKSPACE
+&kp TAB         &kp F1           &kp F2   &kp F3               &kp F4               &kp F5                          &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans           &trans             &kp BACKSPACE
+&kp CAPSLOCK    &kp F6           &kp F7   &hold_to_layer 1 F8  &hold_to_layer 0 F9  &kp F10                         &kp LEFT_ARROW   &kp DOWN_ARROW    &kp UP_ARROW       &kp RIGHT_ARROW  &kp ENTER          &kp GRAVE
+&kp LEFT_SHIFT  &kp F11          &kp F12  &trans               &trans               &trans                          &kp C_MUTE       &mo 3             &trans             &kp MINUS        &kp EQUAL          &trans
+&kp BACKSLASH   &kp RIGHT_SHIFT  &mo 3    &kp LEFT_SHIFT       &kp LEFT_CONTROL     &kp LEFT_ALT  &kp LEFT_COMMAND  &l1_reset_0      &kp SPACE         &kp ENTER          &l2_reset_0      &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+                                                                                                                    &kp RIGHT_SHIFT                                                                                          &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
