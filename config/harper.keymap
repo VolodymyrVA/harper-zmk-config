@@ -53,15 +53,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <500>;
         };
-
-        hold_kp_delay: hold_kp_delay {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_KP_DELAY";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <1000>;
-        };
     };
 
     keymap {
@@ -69,12 +60,12 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE    &kp N1           &kp N2  &kp N3          &kp N4            &kp N5                           &kp N6           &kp N7              &kp N8               &kp N9       &kp N0                                     &trans
-&kp TAB       &kp Q            &kp W   &kp E           &kp R             &kp T                            &kp Y            &mt LEFT_BRACKET U  &mt RIGHT_BRACKET I  &kp O        &kp P                                      &kp BACKSPACE
-&kp CAPSLOCK  &kp A            &kp S   &kp D           &lt 2 F           &kp G                            &kp H            &kp J               &kp K                &kp L        &hold_kp_delay LS(LA(LC(LG(SPACE)))) SEMI  &kp APOSTROPHE
-&kp LSHFT     &kp Z            &kp X   &mt LG(C) C     &mt LG(V) V       &kp B                            &kp C_MUTE       &mo 3               &kp N                &mt MINUS M  &mt EQUAL COMMA                            &kp DOT
-&kp FSLH      &kp RIGHT_SHIFT  &mo 3   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RIGHT_ALT  &kp LEFT_COMMAND  &to 1            &kp SPACE           &kp ENTER            &to 2        &kp RIGHT_COMMAND                          &kp RIGHT_ALT   &kp RIGHT_CONTROL
-                                                                                                          &kp RIGHT_SHIFT                                                                                                                   &mo 3
+&kp ESCAPE    &kp N1           &kp N2  &kp N3          &kp N4            &kp N5                           &kp N6           &kp N7              &kp N8               &kp N9       &kp N0                          &trans
+&kp TAB       &kp Q            &kp W   &kp E           &kp R             &kp T                            &kp Y            &mt LEFT_BRACKET U  &mt RIGHT_BRACKET I  &kp O        &kp P                           &kp BACKSPACE
+&kp CAPSLOCK  &kp A            &kp S   &kp D           &lt 2 F           &kp G                            &kp H            &kp J               &kp K                &kp L        &mt LS(LA(LC(LG(SPACE)))) SEMI  &kp APOSTROPHE
+&kp LSHFT     &kp Z            &kp X   &mt LG(C) C     &mt LG(V) V       &kp B                            &kp C_MUTE       &mo 3               &kp N                &mt MINUS M  &mt EQUAL COMMA                 &kp DOT
+&kp FSLH      &kp RIGHT_SHIFT  &mo 3   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RIGHT_ALT  &kp LEFT_COMMAND  &to 1            &kp SPACE           &kp ENTER            &to 2        &kp RIGHT_COMMAND               &kp RIGHT_ALT   &kp RIGHT_CONTROL
+                                                                                                          &kp RIGHT_SHIFT                                                                                                        &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
