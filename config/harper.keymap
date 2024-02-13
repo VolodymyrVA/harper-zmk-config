@@ -71,7 +71,7 @@
 
         default_layer {
             bindings = <
-&kp EQUAL                                  &kp N1           &kp N2            &kp N3  &kp N4            &kp N5                           &kp N6            &kp N7                          &kp N8                           &kp N9                      &kp N0                                       &kp MINUS
+&kp MINUS                                  &kp N1           &kp N2            &kp N3  &kp N4            &kp N5                           &kp N6            &kp N7                          &kp N8                           &kp N9                      &kp N0                                       &kp EQUAL
 &kp TAB                                    &kp Q            &kp W             &kp E   &kp R             &kp T                            &kp Y             &tap_mode_c LEFT_PARENTHESIS U  &tap_mode_c RIGHT_PARENTHESIS I  &tap_mode_c LEFT_BRACKET O  &tap_mode_c RIGHT_BRACKET P                  &kp BACKSPACE
 &tap_mode_c LA(LC(LG(LEFT_SHIFT))) ESCAPE  &kp A            &kp S             &kp D   &kp F             &kp G                            &kp H             &kp J                           &kp K                            &kp L                       &tap_mode_c LS(LA(LC(LG(SPACE)))) SEMICOLON  &mt GRAVE APOSTROPHE
 &kp LSHFT                                  &kp Z            &kp X             &kp C   &kp V             &kp B                            &kp C_MUTE        &mo 3                           &kp N                            &tap_mode_c MINUS M         &tap_mode_c EQUAL COMMA                      &kp DOT
