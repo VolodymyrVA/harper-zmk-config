@@ -126,7 +126,7 @@
 &trans    &trans  &trans  &trans  &trans  &trans          &trans          &trans                &trans                 &trans           &trans     &trans
 &trans    &trans  &trans  &trans  &trans  &trans          &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT         &kp RBKT   &trans
 &trans    &trans  &trans  &trans  &trans  &trans          &kp LEFT_ARROW  &kp DOWN_ARROW        &kp UP_ARROW           &kp RIGHT_ARROW  &kp CAPS   &kp GRAVE
-&trans    &trans  &trans  &trans  &trans  &trans          &trans          &trans                &kp RIGHT_BRACE        &kp MINUS        &kp EQUAL  &trans
+&trans    &trans  &trans  &trans  &trans  &trans          &trans          &trans                &kp UNDERSCORE         &kp MINUS        &kp EQUAL  &kp PLUS
 &kp BSLH  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans                &trans                 &trans           &trans     &trans     &trans
                                                           &trans                                                                                              &trans
             >;
