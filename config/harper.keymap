@@ -71,12 +71,12 @@
 
         default_layer {
             bindings = <
-&kp MINUS                    &kp N1           &kp N2            &kp N3               &kp N4               &kp N5                           &kp N6            &kp N7     &kp N8     &kp N9                      &kp N0                                       &kp EQUAL
-&kp TAB                      &kp Q            &kp W             &kp E                &kp R                &kp T                            &kp Y             &kp U      &kp I      &tap_mode_c LEFT_BRACKET O  &tap_mode_c RIGHT_BRACKET P                  &kp BACKSPACE
-&tap_mode_c CAPSLOCK ESCAPE  &kp A            &kp S             &kp D                &lt 4 F              &kp G                            &kp H             &kp J      &kp K      &kp L                       &tap_mode_c LS(LA(LC(LG(SPACE)))) SEMICOLON  &kp SQT
-&kp LSHFT                    &kp Z            &kp X             &tap_mode_c LG(C) C  &tap_mode_c LG(V) V  &kp B                            &kp C_MUTE        &mo 3      &kp N      &tap_mode_c MINUS M         &tap_mode_c COMMA COMMA                      &kp DOT
-&kp FSLH                     &kp RIGHT_SHIFT  &kp LEFT_BRACKET  &mo 3                &kp LEFT_CONTROL     &kp RIGHT_ALT  &kp LEFT_COMMAND  &mo 1             &kp SPACE  &kp ENTER  &mo 2                       &kp RIGHT_COMMAND                            &kp RIGHT_ALT  &kp RIGHT_CONTROL
-                                                                                                                                           &kp LEFT_BRACKET                                                                                                                &kp RIGHT_BRACKET
+&kp MINUS                    &kp N1           &kp N2            &kp N3  &kp N4            &kp N5                           &kp N6            &kp N7     &kp N8     &kp N9                      &kp N0                                       &kp EQUAL
+&kp TAB                      &kp Q            &kp W             &kp E   &kp R             &kp T                            &kp Y             &kp U      &kp I      &tap_mode_c LEFT_BRACKET O  &tap_mode_c RIGHT_BRACKET P                  &kp BACKSPACE
+&tap_mode_c CAPSLOCK ESCAPE  &kp A            &kp S             &kp D   &lt 4 F           &kp G                            &kp H             &kp J      &kp K      &kp L                       &tap_mode_c LS(LA(LC(LG(SPACE)))) SEMICOLON  &kp SQT
+&kp LSHFT                    &kp Z            &kp X             &kp C   &kp V             &kp B                            &kp C_MUTE        &mo 3      &kp N      &kp M                       &kp COMMA                                    &kp DOT
+&kp FSLH                     &kp RIGHT_SHIFT  &kp LEFT_BRACKET  &mo 3   &kp LEFT_CONTROL  &kp RIGHT_ALT  &kp LEFT_COMMAND  &mo 1             &kp SPACE  &kp ENTER  &mo 2                       &kp RIGHT_COMMAND                            &kp RIGHT_ALT  &kp RIGHT_CONTROL
+                                                                                                                           &kp LEFT_BRACKET                                                                                                                &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
