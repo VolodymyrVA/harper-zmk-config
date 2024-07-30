@@ -23,7 +23,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
 
@@ -40,12 +40,12 @@
 
         default_layer {
             bindings = <
-&kp ESC    &MY_Hold_Tap LS(LG(N1)) NUMBER_1  &MY_Hold_Tap LS(LG(N2)) NUMBER_2  &kp N3    &kp N4     &kp N5              &kp N6      &kp N7     &kp N8     &MY_Hold_Tap LS(LA(LC(LG(N9)))) N9  &MY_Hold_Tap LS(LA(LC(LG(N0)))) N0            &kp BACKSPACE
-&kp TAB    &kp Q                             &kp W                             &kp E     &kp R      &kp T               &kp Y       &kp U      &kp I      &kp O                               &kp P                                         &kp BSPC
-&kp CAPS   &kp A                             &kp S                             &kp D     &kp F      &kp G               &kp H       &kp J      &kp K      &kp L                               &MY_Hold_Tap LS(LA(LC(LG(SPACE)))) SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z                             &kp X                             &kp C     &kp V      &kp B               &kp C_MUTE  &none      &kp N      &kp M                               &kp COMMA                                     &kp DOT
-&kp FSLH   &kp RSHFT                         &kp LCTRL                         &kp LGUI  &kp LCTRL  &kp LALT  &kp LGUI  &mo LWR     &kp SPACE  &kp ENTER  &kp F14                             &kp RGUI                                      &kp RALT       &kp RCTRL
-                                                                                                                        &kp RGUI                                                                                                                           &kp RCTRL
+&kp ESC    &MY_Hold_Tap LS(LG(N1)) NUMBER_1  &MY_Hold_Tap LS(LG(N2)) NUMBER_2  &kp N3    &kp N4     &kp N5              &kp N6      &kp N7     &kp N8     &kp N9   &kp N0                                        &kp BACKSPACE
+&kp TAB    &kp Q                             &kp W                             &kp E     &kp R      &kp T               &kp Y       &kp U      &kp I      &kp O    &kp P                                         &kp BSPC
+&kp CAPS   &kp A                             &kp S                             &kp D     &kp F      &kp G               &kp H       &kp J      &kp K      &kp L    &MY_Hold_Tap LS(LA(LC(LG(SPACE)))) SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z                             &kp X                             &kp C     &kp V      &kp B               &kp C_MUTE  &none      &kp N      &kp M    &kp COMMA                                     &kp DOT
+&kp FSLH   &kp RSHFT                         &kp LCTRL                         &kp LGUI  &kp LCTRL  &kp LALT  &kp LGUI  &mo LWR     &kp SPACE  &kp ENTER  &kp F14  &kp RGUI                                      &kp RALT       &kp RCTRL
+                                                                                                                        &kp RGUI                                                                                                &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
