@@ -54,7 +54,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_DANCE";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND>, <&mo 2>;
+            bindings = <&kp RIGHT_COMMAND>, <&mo 2>;
 
             tapping-term-ms = <250>;
         };
