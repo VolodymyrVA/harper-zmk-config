@@ -45,7 +45,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CAPS_DANCE";
             #binding-cells = <0>;
-            bindings = <&kp CAPS>, <&kp ESCAPE>;
+            bindings = <&kp F15>, <&kp ESCAPE>;
         };
     };
 
