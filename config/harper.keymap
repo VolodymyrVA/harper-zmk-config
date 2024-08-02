@@ -60,6 +60,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        CL1 {
+            bindings = <&mo 1>;
+            key-positions = <54 59>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
