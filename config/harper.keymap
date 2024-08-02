@@ -46,6 +46,8 @@
             label = "CAPS_DANCE";
             #binding-cells = <0>;
             bindings = <&kp F15>, <&kp ESCAPE>;
+
+            tapping-term-ms = <250>;
         };
     };
 
