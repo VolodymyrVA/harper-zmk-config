@@ -71,7 +71,7 @@
 &kp TAB                  &kp Q                             &kp W                             &kp E   &kp R      &kp T               &kp Y       &kp U      &kp I      &MY_Hold_Tap LEFT_BRACKET O  &MY_Hold_Tap RIGHT_BRACKET P                  &kp BSPC
 &kp CAPSLOCK             &kp A                             &kp S                             &kp D   &lt 2 F    &kp G               &kp H       &kp J      &kp K      &kp L                        &MY_Hold_Tap LS(LA(LC(LG(SPACE)))) SEMICOLON  &MY_Hold_Tap GRAVE SQT
 &kp LSHFT                &kp Z                             &kp X                             &kp C   &kp V      &kp B               &kp C_MUTE  &none      &kp N      &kp M                        &kp COMMA                                     &kp DOT
-&MY_Hold_Tap BSLH SLASH  &kp RSHFT                         &kp LCTRL                         &mo 3   &kp LCTRL  &kp LALT  &kp LGUI  &mo 1       &kp SPACE  &kp ENTER  &kp F14                      &Layer_dance                                  &kp RALT                &kp RCTRL
+&MY_Hold_Tap BSLH SLASH  &kp RSHFT                         &kp LCTRL                         &mo 3   &kp LCTRL  &kp LALT  &kp LGUI  &mo 1       &kp SPACE  &kp ENTER  &kp BACKSPACE                &Layer_dance                                  &kp RALT                &kp RCTRL
                                                                                                                                     &kp RGUI                                                                                                                             &kp RCTRL
             >;
 
