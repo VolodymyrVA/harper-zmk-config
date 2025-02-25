@@ -67,12 +67,12 @@
 
         default_layer {
             bindings = <
-&kp ESC                  &MY_Hold_Tap LS(LG(N1)) NUMBER_1  &MY_Hold_Tap LS(LG(N2)) NUMBER_2  &kp N3  &kp N4     &kp N5              &kp N6      &kp N7     &kp N8     &MY_Hold_Tap MINUS N9        &MY_Hold_Tap EQUAL N0                         &kp BACKSPACE
-&kp TAB                  &kp Q                             &kp W                             &kp E   &kp R      &kp T               &kp Y       &kp U      &kp I      &MY_Hold_Tap LEFT_BRACKET O  &MY_Hold_Tap RIGHT_BRACKET P                  &kp BSPC
-&kp CAPSLOCK             &kp A                             &kp S                             &kp D   &kp F      &kp G               &kp H       &kp J      &kp K      &kp L                        &MY_Hold_Tap LS(LA(LC(LG(SPACE)))) SEMICOLON  &MY_Hold_Tap GRAVE SQT
-&kp LSHFT                &kp Z                             &kp X                             &kp C   &kp V      &kp B               &kp C_MUTE  &none      &kp N      &kp M                        &kp COMMA                                     &kp DOT
-&MY_Hold_Tap BSLH SLASH  &kp RSHFT                         &kp MINUS                         &mo 3   &kp LCTRL  &kp LALT  &kp LGUI  &mo 1       &kp SPACE  &kp ENTER  &kp RG(F14)                  &Layer_dance                                  &kp RALT                &kp RCTRL
-                                                                                                                                    &kp RGUI                                                                                                                             &kp EQUAL
+&kp ESC                  &kp NUMBER_1  &MY_Hold_Tap LS(LG(N2)) NUMBER_2  &kp N3  &MY_Hold_Tap LS(LG(NUMBER_4)) NUMBER_4  &kp LS(LG(N5))            &kp N6      &kp N7     &kp N8     &MY_Hold_Tap MINUS N9        &MY_Hold_Tap EQUAL N0                         &kp BACKSPACE
+&kp TAB                  &kp Q         &kp W                             &kp E   &kp R                                   &kp T                     &kp Y       &kp U      &kp I      &MY_Hold_Tap LEFT_BRACKET O  &MY_Hold_Tap RIGHT_BRACKET P                  &kp BSPC
+&kp CAPSLOCK             &kp A         &kp S                             &kp D   &kp F                                   &kp G                     &kp H       &kp J      &kp K      &kp L                        &MY_Hold_Tap LS(LA(LC(LG(SPACE)))) SEMICOLON  &MY_Hold_Tap GRAVE SQT
+&kp LSHFT                &kp Z         &kp X                             &kp C   &kp V                                   &kp B                     &kp C_MUTE  &none      &kp N      &kp M                        &kp COMMA                                     &kp DOT
+&MY_Hold_Tap BSLH SLASH  &kp RSHFT     &kp LCTRL                         &mo 3   &kp LCTRL                               &kp LALT        &kp LGUI  &mo 1       &kp SPACE  &kp ENTER  &kp RG(F14)                  &Layer_dance                                  &kp RALT                &kp RCTRL
+                                                                                                                                                   &kp RGUI                                                                                                                             &kp LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -80,12 +80,12 @@
 
         lower_layer {
             bindings = <
-&kp ESC         &kp F1           &kp F2       &kp F3       &kp F4      &kp F5                 &kp F6      &kp F7         &kp F8        &kp F9                &kp F10                &kp F11
-&kp GRAVE       &kp EXCLAMATION  &kp AT_SIGN  &kp HASH     &kp DOLLAR  &kp PERCENT            &kp LCTRL   &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-&kp CAPSLOCK    &kp N1           &kp N2       &kp N3       &kp N4      &kp N5                 &kp N6      &kp N7         &kp N8        &kp N9                &kp N0                 &kp BACKSLASH
-&kp LEFT_SHIFT  &kp MINUS        &kp EQUAL    &kp KP_PLUS  &kp F11     &kp F12                &kp C_MUTE  &none          &kp LBKT      &kp RBKT              &kp COMMA              &kp PERIOD
-&kp SEMICOLON   &kp RSHFT        &kp LCTRL    &kp LGUI     &kp LCTRL   &kp LALT     &kp LGUI  &mo 1       &kp SPACE      &kp SPACE     &kp F14               &kp RGUI               &kp RALT       &kp RCTRL
-                                                                                              &kp RGUI                                                                                             &kp RCTRL
+&kp ESC         &kp F1           &kp F2       &kp F3    &kp F4      &kp F5                 &kp F6      &kp F7         &kp F8        &kp F9                &kp F10                &kp F11
+&kp GRAVE       &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT            &kp LCTRL   &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+&kp CAPSLOCK    &kp N1           &kp N2       &kp N3    &kp N4      &kp N5                 &kp N6      &kp N7         &kp N8        &kp N9                &kp N0                 &kp BACKSLASH
+&kp LEFT_SHIFT  &kp MINUS        &kp EQUAL    &kp F11   &kp F12     &kp F12                &kp C_MUTE  &none          &kp LBKT      &kp RBKT              &kp COMMA              &kp PERIOD
+&kp SEMICOLON   &kp RSHFT        &kp LCTRL    &kp LGUI  &kp LCTRL   &kp LALT     &kp LGUI  &mo 1       &kp SPACE      &kp SPACE     &kp F14               &kp RGUI               &kp RALT       &kp RCTRL
+                                                                                           &kp RGUI                                                                                             &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
